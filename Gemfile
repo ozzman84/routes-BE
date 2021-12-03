@@ -18,7 +18,6 @@ gem 'puma', '~> 3.11'
 gem 'faraday'
 gem 'figaro'
 gem 'graphql', '1.11.6'
-gem 'travis'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
