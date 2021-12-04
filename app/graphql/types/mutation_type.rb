@@ -1,5 +1,5 @@
 module Types
   class MutationType < Types::BaseObject
-    field :createCustomer, mutation: MutationType::CreateCustomer
+    field :createCustomer, mutation: Mutations::CreateCustomer
   end
 end
