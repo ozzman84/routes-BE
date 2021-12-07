@@ -32,7 +32,7 @@ RSpec.describe 'createCustomer', type: :request do
     <<~GQL
       mutation {
         createCustomer(
-          name: "Bob Johnson",
+          name: "Dong Johnson",
           driverId: 1
       ) {
             id

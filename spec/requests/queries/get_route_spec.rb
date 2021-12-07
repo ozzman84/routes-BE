@@ -21,9 +21,15 @@ RSpec.describe 'Get Route' do
       {
         routeRequest(driver: 1,
         pickupDay: "Monday"){
-          id
-          route
-      }}
+          name
+          streetAddress
+          city
+          state
+          latitude
+          longitude
+          disposalTime
+        }
+      }
     GQL
   end
 end

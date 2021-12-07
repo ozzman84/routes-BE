@@ -1,7 +1,6 @@
 module Types
-  class RouteType < BaseObject
-    field :id, ID, null: false
-    field :route, [String], null: false
-
+  class Route < BaseObject
+    field :routeStops,
+      resolver: Resolvers::Stops
   end
 end
