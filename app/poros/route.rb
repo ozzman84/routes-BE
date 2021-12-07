@@ -6,6 +6,7 @@ class Route
   end
 
   private
+
   def create_route_stops(info)
     info.map do |location|
       RouteStop.new(location)
