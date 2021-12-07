@@ -4,8 +4,8 @@ module Types
     field :street_address, String, null: false
     field :city, String, null: false
     field :state, String, null: false
-    field :disposal_time, String, null: false
-    field :latitude, String, null: false
-    field :longitude, String, null: false
+    field :disposal_time, Integer, null: false
+    field :latitude, Float, null: false
+    field :longitude, Float, null: false
   end
 end

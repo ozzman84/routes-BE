@@ -16,7 +16,7 @@ private
     Location.find_by(street_address: street_address)
   end
 
-  def get_disposal_time(street_address)
-    get_db_location(street_address).number_of_bins * 5
+  def get_disposal_time(street_address, per_bin = 5)
+    get_db_location(street_address).number_of_bins * per_bin
   end
 end
