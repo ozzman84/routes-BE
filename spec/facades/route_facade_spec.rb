@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe RouteFacade do
-  it 'creates a route object from service info' do
+  xit 'creates a route object from service info' do
     driver = Driver.create!(id: 1, name: "Jeffery Jefferson")
     customer = driver.customers.create!(name: "Customer A")
     location_a = customer.locations.create!(number_of_bins: 2, street_address: "8242 George Early Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
