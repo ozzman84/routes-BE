@@ -36,23 +36,19 @@ jobs:
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
 
-      - name: Check out repository
-              uses: actions/checkout@v2
-              with:
-                fetch-depth: 0
-            - name: Heroku login credentials
-              run: |
-                cat > ~/.netrc <<EOF
-                  machine api.heroku.com
-                    login mikeosmonson@gmail.com
-                    password $HEROKU_API_KEY
-                  machine git.heroku.com
-                    login mikeosmonson@gmail.com
-                    password $HEROKU_API_KEY
-                EOF
-              env:
-                HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-            - name: Add Heroku remote
-              run: heroku git:remote --app peaceful-wildwood-61032
-            - name: Push to Heroku
-              run: git push heroku main
+      - name: Heroku login credentials
+        run: |
+          cat > ~/.netrc <<EOF
+            machine api.heroku.com
+              login mikeosmonson@gmail.com
+              password $HEROKU_API_KEY
+            machine git.heroku.com
+              login mikeosmonson@gmail.com
+              password $HEROKU_API_KEY
+          EOF
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+      - name: Add Heroku remote
+        run: heroku git:remote --app peaceful-wildwood-61032
+      - name: Push to Heroku
+        run: git push heroku main
