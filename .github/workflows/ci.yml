@@ -51,4 +51,4 @@ jobs:
       - name: Add Heroku remote
         run: heroku git:remote --app peaceful-wildwood-61032
       - name: Push to Heroku
-        run: git push heroku main
+        run: git push heroku master
