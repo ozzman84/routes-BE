@@ -6,7 +6,7 @@ module Mutations
     argument :pickup_day, String, required: true
     argument :number_of_bins, Integer, required: true
     argument :picked_up, Boolean, required: true
-    argument :customer_id, Bigint, required: true
+    # argument :customer_id, Bigint, required: true
 
     type Types::LocationType
 

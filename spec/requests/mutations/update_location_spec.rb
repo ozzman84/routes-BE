@@ -16,9 +16,9 @@ module Mutations
           #   customer_id: 'Store 1'
           # }
 
-          driver = Driver.new(name: 'Steve')
-          customer = Customer.new(name: 'Store 1', driver_id: 1)
-          location = Location.new(
+          driver = Driver.create!(name: 'Steve')
+          customer = Customer.create!(name: 'Store 1', driver_id: 1)
+          location = customer.locations.create!(
             street_address: '1234 Main St',
             city: 'Denver',
             state: 'CO',
