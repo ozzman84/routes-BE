@@ -1,5 +1,5 @@
 class Route
-  def stops(info)
+  def self.stops(info)
     info.map do |location|
       RouteStop.new(location)
     end

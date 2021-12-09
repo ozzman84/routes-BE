@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Get Route' do
   describe 'HAPPY PATH' do
-    xit 'creates optimized route data from driver/day of week' do
+    it 'creates optimized route data from driver/day of week' do
       company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
       driver = company.drivers.create!(id: 1, name: "Jeffery Jefferson")
       customer = driver.customers.create!(name: "Customer A")
@@ -23,6 +23,21 @@ RSpec.describe 'Get Route' do
       expect(data[:routeRequest].first).to have_key(:longitude)
       expect(data[:routeRequest].first).to have_key(:disposalTime)
       expect(data[:routeRequest].first).to have_key(:name)
+    end
+
+    it 'creates route with same start and end point' do
+      company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
+      driver = company.drivers.create!(id: 1, name: "Jeffery Jefferson")
+      customer = driver.customers.create!(name: "Customer A")
+      location_a = customer.locations.create!(number_of_bins: 2, street_address: "8242 George Early Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
+      location_b = customer.locations.create!(number_of_bins: 3, street_address: "706 Poplar Ave", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
+      location_c = customer.locations.create!(number_of_bins: 1, street_address: "203 McMinn Rd", city: "Centerville", state: "IN", pickup_day: "Tuesday", picked_up: false)
+      post '/graphql', params: { query: happy_query}
+
+      expect(response).to be_successful
+      response_body = JSON.parse(response.body, symbolize_names: true)
+      data = response_body[:data]
+      expect(data[:routeRequest].first[:latitude]).to eq(data[:routeRequest].last[:latitude])
     end
   end
 

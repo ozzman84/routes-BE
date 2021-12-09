@@ -7,10 +7,10 @@ module Resolvers
 
     def resolve(driver:, pickupDay:)
       # call your application logic here:
-      route = RouteFacade.create_route(driver, pickupDay)
+      RouteFacade.create_route(driver, pickupDay)
 
       # return the list of items
-      route.stops
+
     end
   end
 end
