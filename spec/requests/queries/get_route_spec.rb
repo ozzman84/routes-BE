@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Get Route' do
   describe 'HAPPY PATH' do
     xit 'creates optimized route data from driver/day of week' do
-      driver = Driver.create!(id: 1, name: "Jeffery Jefferson")
+      company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
+      driver = company.drivers.create!(id: 1, name: "Jeffery Jefferson")
       customer = driver.customers.create!(name: "Customer A")
       location_a = customer.locations.create!(number_of_bins: 2, street_address: "8242 George Early Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
       location_b = customer.locations.create!(number_of_bins: 3, street_address: "706 Poplar Ave", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
@@ -27,7 +28,8 @@ RSpec.describe 'Get Route' do
 
   describe 'SAD PATH' do
     xit 'returns error if driver id is not in the database' do
-      driver = Driver.create!(id: 1, name: "Jeffery Jefferson")
+      company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
+      driver = company.drivers.create!(id: 1, name: "Jeffery Jefferson")
       customer = driver.customers.create!(name: "Customer A")
       location_a = customer.locations.create!(number_of_bins: 2, street_address: "8242 George Early Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
       location_b = customer.locations.create!(number_of_bins: 3, street_address: "706 Poplar Ave", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
