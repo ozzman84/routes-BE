@@ -42,17 +42,9 @@ RSpec.describe 'Get Route' do
   end
 
   describe 'SAD PATH' do
-<<<<<<< HEAD
-    it 'returns error if driver id is not in the database' do
-=======
     xit 'returns error if driver id is not in the database' do
-<<<<<<< HEAD
->>>>>>> e2abf43db8664c512aac6229309804e28c276770
-      driver = Driver.create!(id: 1, name: "Jeffery Jefferson")
-=======
       company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
       driver = company.drivers.create!(id: 1, name: "Jeffery Jefferson")
->>>>>>> 9107cdef29e8b12201bf49286af8e7310e97fa3e
       customer = driver.customers.create!(name: "Customer A")
       location_a = customer.locations.create!(number_of_bins: 2, street_address: "8242 George Early Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
       location_b = customer.locations.create!(number_of_bins: 3, street_address: "706 Poplar Ave", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
