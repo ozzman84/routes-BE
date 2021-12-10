@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe 'Get Route' do
   describe 'HAPPY PATH' do
     xit 'creates optimized route data from driver/day of week' do
-      driver = Driver.create!(id: 1, name: "Jeffery Jefferson")
+      company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
+      driver = company.drivers.create!(id: 1, name: "Jeffery Jefferson")
       customer = driver.customers.create!(name: "Customer A")
       location_a = customer.locations.create!(number_of_bins: 2, street_address: "8242 George Early Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
       location_b = customer.locations.create!(number_of_bins: 3, street_address: "706 Poplar Ave", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
@@ -23,6 +24,21 @@ RSpec.describe 'Get Route' do
       expect(data[:routeRequest].first).to have_key(:disposalTime)
       expect(data[:routeRequest].first).to have_key(:name)
     end
+
+    xit 'creates route with same start and end point' do
+      company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
+      driver = company.drivers.create!(id: 1, name: "Jeffery Jefferson")
+      customer = driver.customers.create!(name: "Customer A")
+      location_a = customer.locations.create!(number_of_bins: 2, street_address: "8242 George Early Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
+      location_b = customer.locations.create!(number_of_bins: 3, street_address: "706 Poplar Ave", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
+      location_c = customer.locations.create!(number_of_bins: 1, street_address: "203 McMinn Rd", city: "Centerville", state: "IN", pickup_day: "Tuesday", picked_up: false)
+      post '/graphql', params: { query: happy_query}
+
+      expect(response).to be_successful
+      response_body = JSON.parse(response.body, symbolize_names: true)
+      data = response_body[:data]
+      expect(data[:routeRequest].first[:latitude]).to eq(data[:routeRequest].last[:latitude])
+    end
   end
 
   describe 'SAD PATH' do
@@ -30,8 +46,13 @@ RSpec.describe 'Get Route' do
     it 'returns error if driver id is not in the database' do
 =======
     xit 'returns error if driver id is not in the database' do
+<<<<<<< HEAD
 >>>>>>> e2abf43db8664c512aac6229309804e28c276770
       driver = Driver.create!(id: 1, name: "Jeffery Jefferson")
+=======
+      company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
+      driver = company.drivers.create!(id: 1, name: "Jeffery Jefferson")
+>>>>>>> 9107cdef29e8b12201bf49286af8e7310e97fa3e
       customer = driver.customers.create!(name: "Customer A")
       location_a = customer.locations.create!(number_of_bins: 2, street_address: "8242 George Early Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
       location_b = customer.locations.create!(number_of_bins: 3, street_address: "706 Poplar Ave", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
