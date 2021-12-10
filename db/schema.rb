@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_04_194644) do
+ActiveRecord::Schema.define(version: 2021_12_09_004406) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,6 +27,8 @@ ActiveRecord::Schema.define(version: 2021_12_04_194644) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.bigint "waste_company_id"
+    t.index ["waste_company_id"], name: "index_drivers_on_waste_company_id"
   end
 
   create_table "locations", force: :cascade do |t|
@@ -42,6 +44,16 @@ ActiveRecord::Schema.define(version: 2021_12_04_194644) do
     t.index ["customer_id"], name: "index_locations_on_customer_id"
   end
 
+  create_table "waste_companies", force: :cascade do |t|
+    t.string "name"
+    t.string "street_address"
+    t.string "city"
+    t.string "state"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   add_foreign_key "customers", "drivers"
+  add_foreign_key "drivers", "waste_companies"
   add_foreign_key "locations", "customers"
 end

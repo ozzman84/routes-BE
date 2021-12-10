@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe 'createCustomer', type: :request do
   describe 'HAPPY PATH' do
     xit 'returns values' do
-      Driver.create!(name: 'Smokey', id: 1)
+      company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
+      company.drivers.create!(name: 'Smokey', id: 1)
       post '/graphql', params: { query: happy_query }
 
       expect(response).to be_successful
