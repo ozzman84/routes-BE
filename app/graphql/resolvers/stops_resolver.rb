@@ -6,11 +6,7 @@ module Resolvers
     argument :pickupDay, String, required: true
 
     def resolve(driver:, pickupDay:)
-      # call your application logic here:
       RouteFacade.create_route(driver, pickupDay)
-
-      # return the list of items
-
     end
   end
 end
