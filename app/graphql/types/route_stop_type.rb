@@ -7,5 +7,6 @@ module Types
     field :disposal_time, Integer, null: false
     field :latitude, Float, null: false
     field :longitude, Float, null: false
+    field :location_id, Integer, null: true
   end
 end
