@@ -12,9 +12,9 @@ module Mutations
     type Types::LocationType
 
     def resolve(id:, **args)
-      location = Location.find(id)
-      location.update(args)
-      location
+      Location.find(id).tap do |location|
+        location.update!(args)
+      end
     end
   end
 end
