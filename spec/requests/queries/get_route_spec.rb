@@ -23,6 +23,7 @@ RSpec.describe 'Get Route' do
       expect(data[:routeRequest].first).to have_key(:longitude)
       expect(data[:routeRequest].first).to have_key(:disposalTime)
       expect(data[:routeRequest].first).to have_key(:name)
+      expect(data[:routeRequest].first).to have_key(:locationId)
     end
 
     xit 'creates route with same start and end point' do
@@ -67,6 +68,7 @@ RSpec.describe 'Get Route' do
           latitude
           longitude
           disposalTime
+          locationId
         }
       }
     GQL
