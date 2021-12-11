@@ -1,3 +1,4 @@
 class Driver < ApplicationRecord
-  has_many :customers
+  belongs_to :waste_company
+  has_many :customers, dependent: :destroy
 end
