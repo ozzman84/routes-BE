@@ -1,5 +1,5 @@
 class RouteStop
-  attr_reader :name, :location_id, :street_address, :city, :state, :latitude, :longitude, :disposal_time
+  attr_reader :name, :location_id, :street_address, :city, :state, :latitude, :longitude, :disposal_time, :customer_id
 
   def initialize(info)
     @name = address_type(info[:street])
@@ -10,6 +10,7 @@ class RouteStop
     @longitude = info[:latLng][:lng]
     @disposal_time = get_disposal_time(info[:street])
     @location_id = get_location_id(info[:street])
+    @customer_id = get_location_customer_id(info[:street])
   end
 
 private
@@ -36,6 +37,14 @@ private
   def get_location_id(street_address)
     if Location.exists?(street_address: street_address)
       get_db_location(street_address).id
+    else
+      nil
+    end
+  end
+
+  def get_location_customer_id(street_address)
+    if Location.exists?(street_address: street_address)
+      get_db_location(street_address).customer.id
     else
       nil
     end
