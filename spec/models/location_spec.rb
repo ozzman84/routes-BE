@@ -14,6 +14,7 @@ RSpec.describe Location, type: :model do
         location_a = customer.locations.create!(number_of_bins: 2, street_address: "8242 George Early Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
         location_b = customer.locations.create!(number_of_bins: 3, street_address: "706 Poplar Ave", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: false)
         location_c = customer.locations.create!(number_of_bins: 1, street_address: "203 McMinn Rd", city: "Centerville", state: "IN", pickup_day: "Tuesday", picked_up: false)
+        location_d = customer.locations.create!(number_of_bins: 1, street_address: "205 McMinn Rd", city: "Centerville", state: "IN", pickup_day: "Monday", picked_up: true)
 
         expect(Location.route_by_day_and_driver(driver.id, "Monday")).to eq([location_a, location_b])
       end
