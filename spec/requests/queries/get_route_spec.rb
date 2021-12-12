@@ -25,7 +25,6 @@ RSpec.describe 'Get Route' do
       expect(data[:routeRequest].first).to have_key(:disposalTime)
       expect(data[:routeRequest].first).to have_key(:name)
       expect(data[:routeRequest].first).to have_key(:locationId)
-      binding.pry
       expect(data[:routeRequest].first).to have_key(:customerId)
     end
 
