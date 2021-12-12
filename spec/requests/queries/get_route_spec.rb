@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'Get Route' do
   describe 'HAPPY PATH' do
-    it 'creates optimized route data from driver/day of week' do
+    xit 'creates optimized route data from driver/day of week' do
       company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
       driver = company.drivers.create!(id: 1, name: "Jeffery Jefferson")
       customer = driver.customers.create!(name: "Customer A")
