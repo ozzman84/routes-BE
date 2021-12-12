@@ -7,6 +7,7 @@ class Location < ApplicationRecord
       locations = Location.joins(customer: :driver)
         .where("drivers.id = ?", driver)
         .where("locations.pickup_day = ?", pickup_day)
+        .where("locations.picked_up = ?", false)
     else
       raise ActiveRecord::RecordNotFound
     end
