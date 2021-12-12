@@ -8,5 +8,6 @@ module Types
     field :latitude, Float, null: false
     field :longitude, Float, null: false
     field :location_id, Integer, null: true
+    field :customer_id, Integer, null: true
   end
 end
