@@ -25,7 +25,6 @@ customer_a.locations.create!(number_of_bins: 2, street_address: "702 Pearl St", 
 customer_a.locations.create!(number_of_bins: 3, street_address: "9990 Mesa Rim Rd", city: "San Diego", state: "CA", pickup_day: "Tuesday", picked_up: false)
 customer_a.locations.create!(number_of_bins: 1, street_address: "4425 Bannock Ave", city: "San Diego", state: "CA", pickup_day: "Wednesday", picked_up: false)
 customer_b = driver1.customers.create!(name: "Customer B")
-customer_b.locations.create!(number_of_bins: 2, street_address: "6048 Cornerstone Ct", city: "San Diego", state: "CA", pickup_day: "Monday", picked_up: false)
 customer_b.locations.create!(number_of_bins: 5, street_address: "5665 Oberlin Dr", city: "San Diego", state: "CA", pickup_day: "Tuesday", picked_up: false)
 customer_c = driver1.customers.create!(name: "Customer C")
 customer_c.locations.create!(number_of_bins: 4, street_address: "3737 Moraga Ave", city: "San Diego", state: "CA", pickup_day: "Thursday", picked_up: false)
