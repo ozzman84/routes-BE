@@ -5,8 +5,8 @@ module Resolvers
     argument :driver, Integer, required: true
     argument :pickupDay, String, required: true
 
-    def resolve(driver:, pickupDay:)
-      RouteFacade.create_route(driver, pickupDay)
+    def resolve(**args)
+      RouteFacade.create_route(args)
     end
   end
 end
