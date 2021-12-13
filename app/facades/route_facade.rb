@@ -15,7 +15,6 @@ class RouteFacade
         driver = customer.driver.id
 
         stops = Location.route_by_day_and_driver(driver, args[:pickupDay])
-        binding.pry
 
         addresses = full_address(stops, driver)
 
