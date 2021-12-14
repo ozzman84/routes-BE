@@ -30,6 +30,7 @@ private
   end
 
   def get_disposal_time(street_address, per_bin = 5)
+    street_address = get_street(street_address)
     if Location.exists?(street_address: street_address)
       get_db_location(street_address).number_of_bins * per_bin
     else
@@ -38,6 +39,7 @@ private
   end
 
   def get_location_id(street_address)
+    street_address = get_street(street_address)
     if Location.exists?(street_address: street_address)
       get_db_location(street_address).id
     else
@@ -46,6 +48,7 @@ private
   end
 
   def get_location_customer_id(street_address)
+    street_address = get_street(street_address)
     if Location.exists?(street_address: street_address)
       get_db_location(street_address).customer.id
     else
