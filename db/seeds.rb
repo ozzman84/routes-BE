@@ -17,7 +17,7 @@ Driver.destroy_all
 Customer.destroy_all
 Location.destroy_all
 
-company = WasteCompany.create!(name: 'Sandiego Medical Waste', street_address: '7630 Miramar Rd, 2200', city: 'San Diego', state: 'CA')
+company = WasteCompany.create!(name: 'Sandiego Medical Waste', street_address: '7630 Miramar Rd', building_number: "2200", city: 'San Diego', state: 'CA')
 driver1 = company.drivers.create!(name: "Jeffery Jefferson")
 driver2 = company.drivers.create!(name: "Tom Thompson")
 customer_a = driver1.customers.create!(name: "Customer A")
