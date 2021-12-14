@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe 'createCustomer', type: :request do
   describe 'HAPPY PATH' do
-    xit 'returns values' do
+    it 'returns values' do
       company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
       company.drivers.create!(name: 'Smokey', id: 1)
       post '/graphql', params: { query: happy_query }
@@ -18,7 +18,7 @@ RSpec.describe 'createCustomer', type: :request do
   end
 
   describe 'SAD PATH' do
-    xit 'returns error if incomplete data is provided' do
+    it 'returns error if incomplete data is provided' do
       body = ""
       post '/graphql', params: { query: sad_query }
 

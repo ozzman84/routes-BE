@@ -1,0 +1,208 @@
+{
+    "route": {
+        "hasTollRoad": false,
+        "hasBridge": false,
+        "boundingBox": {
+            "lr": {
+                "lng": -85.001259,
+                "lat": 39.819836
+            },
+            "ul": {
+                "lng": -85.001259,
+                "lat": 39.819836
+            }
+        },
+        "distance": 0,
+        "hasTimedRestriction": false,
+        "hasTunnel": false,
+        "hasHighway": false,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "00:00:00",
+        "sessionId": "61b8e0b4-01a5-5f21-02b4-3567-0a036419520f",
+        "hasAccessRestriction": false,
+        "realTime": 0,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 0,
+        "legs": [
+            {
+                "hasTollRoad": false,
+                "hasBridge": false,
+                "destNarrative": "",
+                "distance": 0,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": false,
+                "index": 0,
+                "formattedTime": "00:00:00",
+                "origIndex": -1,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": -1,
+                "time": 0,
+                "hasUnpaved": false,
+                "origNarrative": "",
+                "maneuvers": [
+                    {
+                        "distance": 0,
+                        "streets": [
+                            "W Water St"
+                        ],
+                        "narrative": "The origin and destination are essentially the same place.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -85.001259,
+                            "lat": 39.819836
+                        },
+                        "index": 0,
+                        "formattedTime": "00:00:00",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.8198356628418,-85.00125885009766|marker-1||&center=39.8198356628418,-85.00125885009766&defaultMarker=none&zoom=15&rand=-310982031&session=61b8e0b4-01a5-5f21-02b4-3567-0a036419520f",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "519 W WATER ST is on the right.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -85.001259,
+                            "lat": 39.819836
+                        },
+                        "index": 1,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -85.001259,
+                    "lat": 39.819836
+                },
+                "adminArea4": "Wayne",
+                "adminArea5": "Centerville",
+                "postalCode": "47330-1055",
+                "adminArea1": "US",
+                "adminArea3": "IN",
+                "type": "s",
+                "sideOfStreet": "L",
+                "geocodeQualityCode": "P1AAA",
+                "adminArea4Type": "County",
+                "linkId": 78660554,
+                "street": "519 W Water St",
+                "adminArea5Type": "City",
+                "geocodeQuality": "POINT",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -85.001261,
+                    "lat": 39.819835
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -85.001259,
+                    "lat": 39.819836
+                },
+                "adminArea4": "Wayne",
+                "adminArea5": "Centerville",
+                "postalCode": "47330-1055",
+                "adminArea1": "US",
+                "adminArea3": "IN",
+                "type": "s",
+                "sideOfStreet": "L",
+                "geocodeQualityCode": "P1AAA",
+                "adminArea4Type": "County",
+                "linkId": 78660554,
+                "street": "519 W Water St",
+                "adminArea5Type": "City",
+                "geocodeQuality": "POINT",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -85.001261,
+                    "lat": 39.819835
+                }
+            }
+        ],
+        "time": 0,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            1
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2021 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2021 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}
