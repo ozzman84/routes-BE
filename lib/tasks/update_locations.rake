@@ -5,7 +5,6 @@ namespace :update_locations do
     locations.each do |location|
       location.picked_up = false
     end
-    puts "updated"
   end
 
 end
