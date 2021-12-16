@@ -1,0 +1,675 @@
+{
+    "route": {
+        "hasTollRoad": false,
+        "hasBridge": false,
+        "boundingBox": {
+            "lr": {
+                "lng": -84.991173,
+                "lat": 39.81163
+            },
+            "ul": {
+                "lng": -85.039398,
+                "lat": 39.838089
+            }
+        },
+        "distance": 8.788,
+        "hasTimedRestriction": false,
+        "hasTunnel": false,
+        "hasHighway": false,
+        "computedWaypoints": [],
+        "routeError": {
+            "errorCode": -400,
+            "message": ""
+        },
+        "formattedTime": "00:19:34",
+        "sessionId": "61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+        "hasAccessRestriction": false,
+        "realTime": 1186,
+        "hasSeasonalClosure": false,
+        "hasCountryCross": false,
+        "fuelUsed": 0.44,
+        "legs": [
+            {
+                "hasTollRoad": false,
+                "hasBridge": false,
+                "destNarrative": "Proceed to 706 POPLAR AVE.",
+                "distance": 1.088,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": false,
+                "index": 0,
+                "formattedTime": "00:03:46",
+                "origIndex": 1,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": 2,
+                "time": 226,
+                "hasUnpaved": false,
+                "origNarrative": "Go south on N Morton Ave.",
+                "maneuvers": [
+                    {
+                        "distance": 0.265,
+                        "streets": [
+                            "W Water St"
+                        ],
+                        "narrative": "Start out going east on W Water St toward N Spruce St.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -85.001259,
+                            "lat": 39.819836
+                        },
+                        "index": 0,
+                        "formattedTime": "00:00:54",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.8198356628418,-85.00125885009766|marker-1||39.819786071777344,-84.9963150024414|marker-2||&center=39.81981086730957,-84.99878692626953&defaultMarker=none&zoom=12&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 54,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0.352,
+                        "streets": [
+                            "N Morton Ave"
+                        ],
+                        "narrative": "Turn right onto N Morton Ave.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -84.996315,
+                            "lat": 39.819786
+                        },
+                        "index": 1,
+                        "formattedTime": "00:00:54",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.819786071777344,-84.9963150024414|marker-2||39.81468200683594,-84.99628448486328|marker-3||&center=39.81723403930664,-84.99629974365234&defaultMarker=none&zoom=11&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 54,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.247,
+                        "streets": [
+                            "E South St"
+                        ],
+                        "narrative": "Turn left onto E South St.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -84.996284,
+                            "lat": 39.814682
+                        },
+                        "index": 2,
+                        "formattedTime": "00:01:00",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.81468200683594,-84.99628448486328|marker-3||39.81471633911133,-84.99163055419922|marker-4||&center=39.81469917297363,-84.99395751953125&defaultMarker=none&zoom=12&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 60,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0.224,
+                        "streets": [
+                            "Poplar Ave"
+                        ],
+                        "narrative": "Turn right onto Poplar Ave.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -84.991631,
+                            "lat": 39.814716
+                        },
+                        "index": 3,
+                        "formattedTime": "00:00:58",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.81471633911133,-84.99163055419922|marker-4||39.81163024902344,-84.99117279052734|marker-5||&center=39.81317329406738,-84.99140167236328&defaultMarker=none&zoom=11&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 58,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "706 POPLAR AVE is on the right.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -84.991173,
+                            "lat": 39.81163
+                        },
+                        "index": 4,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            },
+            {
+                "hasTollRoad": false,
+                "hasBridge": false,
+                "destNarrative": "Proceed to 8242 GEORGE EARLY RD.",
+                "distance": 4.405,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": false,
+                "index": 1,
+                "formattedTime": "00:09:32",
+                "origIndex": 2,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": 4,
+                "time": 572,
+                "hasUnpaved": false,
+                "origNarrative": "Go west on E Main St/US-40 W.",
+                "maneuvers": [
+                    {
+                        "distance": 0.224,
+                        "streets": [
+                            "Poplar Ave"
+                        ],
+                        "narrative": "Start out going north on Poplar Ave toward Willow Dr.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -84.991173,
+                            "lat": 39.81163
+                        },
+                        "index": 5,
+                        "formattedTime": "00:01:01",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.81163024902344,-84.99117279052734|marker-6||39.81471633911133,-84.99163055419922|marker-7||&center=39.81317329406738,-84.99140167236328&defaultMarker=none&zoom=11&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 61,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0.209,
+                        "streets": [
+                            "S 3rd St"
+                        ],
+                        "narrative": "Poplar Ave becomes S 3rd St.",
+                        "turnType": 0,
+                        "startPoint": {
+                            "lng": -84.991631,
+                            "lat": 39.814716
+                        },
+                        "index": 6,
+                        "formattedTime": "00:01:04",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.81471633911133,-84.99163055419922|marker-7||39.8177490234375,-84.99163818359375|marker-8||&center=39.816232681274414,-84.99163436889648&defaultMarker=none&zoom=11&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 64,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_straight_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 0.727,
+                        "streets": [
+                            "E Main St",
+                            "US-40 W"
+                        ],
+                        "narrative": "Turn left onto E Main St/US-40 W.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -84.991638,
+                            "lat": 39.817749
+                        },
+                        "index": 7,
+                        "formattedTime": "00:01:27",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [
+                            {
+                                "extraText": "",
+                                "text": "40",
+                                "type": 2,
+                                "url": "http://icons.mqcdn.com/icons/rs2.png?n=40&d=WEST",
+                                "direction": 7
+                            }
+                        ],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.8177490234375,-84.99163818359375|marker-8||39.81739044189453,-85.00527954101562|marker-9||&center=39.817569732666016,-84.99845886230469&defaultMarker=none&zoom=11&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 87,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 0.926,
+                        "streets": [
+                            "N McMinn Rd"
+                        ],
+                        "narrative": "Turn right onto N McMinn Rd.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -85.00528,
+                            "lat": 39.81739
+                        },
+                        "index": 8,
+                        "formattedTime": "00:01:57",
+                        "directionName": "North",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.81739044189453,-85.00527954101562|marker-9||39.830810546875,-85.0053482055664|marker-10||&center=39.824100494384766,-85.00531387329102&defaultMarker=none&zoom=9&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 117,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 1
+                    },
+                    {
+                        "distance": 1.949,
+                        "streets": [
+                            "College Corner Rd"
+                        ],
+                        "narrative": "Turn left onto College Corner Rd.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -85.005348,
+                            "lat": 39.830811
+                        },
+                        "index": 9,
+                        "formattedTime": "00:03:25",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.830810546875,-85.0053482055664|marker-10||39.83808898925781,-85.03939819335938|marker-11||&center=39.834449768066406,-85.02237319946289&defaultMarker=none&zoom=9&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 205,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 0.37,
+                        "streets": [
+                            "George Early Rd"
+                        ],
+                        "narrative": "Turn sharp right onto George Early Rd.",
+                        "turnType": 3,
+                        "startPoint": {
+                            "lng": -85.039398,
+                            "lat": 39.838089
+                        },
+                        "index": 10,
+                        "formattedTime": "00:00:38",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.83808898925781,-85.03939819335938|marker-11||39.83808517456055,-85.03243255615234|marker-12||&center=39.83808708190918,-85.03591537475586&defaultMarker=none&zoom=12&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 38,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_sharp_right_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "8242 GEORGE EARLY RD is on the left.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -85.032433,
+                            "lat": 39.838085
+                        },
+                        "index": 11,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            },
+            {
+                "hasTollRoad": false,
+                "hasBridge": false,
+                "destNarrative": "Proceed to 519 W WATER ST.",
+                "distance": 3.295,
+                "hasTimedRestriction": false,
+                "hasTunnel": false,
+                "hasHighway": false,
+                "index": 2,
+                "formattedTime": "00:06:16",
+                "origIndex": 1,
+                "hasAccessRestriction": false,
+                "hasSeasonalClosure": false,
+                "hasCountryCross": false,
+                "roadGradeStrategy": [
+                    []
+                ],
+                "destIndex": 2,
+                "time": 376,
+                "hasUnpaved": false,
+                "origNarrative": "Go east on College Corner Rd.",
+                "maneuvers": [
+                    {
+                        "distance": 0.37,
+                        "streets": [
+                            "George Early Rd"
+                        ],
+                        "narrative": "Start out going west on George Early Rd toward College Corner Rd.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -85.032433,
+                            "lat": 39.838085
+                        },
+                        "index": 12,
+                        "formattedTime": "00:00:43",
+                        "directionName": "West",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.83808517456055,-85.03243255615234|marker-13||39.83808898925781,-85.03939819335938|marker-14||&center=39.83808708190918,-85.03591537475586&defaultMarker=none&zoom=12&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 43,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-start_sm.gif",
+                        "direction": 7
+                    },
+                    {
+                        "distance": 1.949,
+                        "streets": [
+                            "College Corner Rd"
+                        ],
+                        "narrative": "Turn sharp left onto College Corner Rd.",
+                        "turnType": 5,
+                        "startPoint": {
+                            "lng": -85.039398,
+                            "lat": 39.838089
+                        },
+                        "index": 13,
+                        "formattedTime": "00:03:26",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.83808898925781,-85.03939819335938|marker-14||39.830810546875,-85.0053482055664|marker-15||&center=39.834449768066406,-85.02237319946289&defaultMarker=none&zoom=9&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 206,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_sharp_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0.761,
+                        "streets": [
+                            "N McMinn Rd"
+                        ],
+                        "narrative": "Turn right onto N McMinn Rd.",
+                        "turnType": 2,
+                        "startPoint": {
+                            "lng": -85.005348,
+                            "lat": 39.830811
+                        },
+                        "index": 14,
+                        "formattedTime": "00:01:36",
+                        "directionName": "South",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.830810546875,-85.0053482055664|marker-15||39.81977844238281,-85.00529479980469|marker-16||&center=39.825294494628906,-85.00532150268555&defaultMarker=none&zoom=10&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 96,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_right_sm.gif",
+                        "direction": 4
+                    },
+                    {
+                        "distance": 0.215,
+                        "streets": [
+                            "W Water St"
+                        ],
+                        "narrative": "Turn left onto W Water St.",
+                        "turnType": 6,
+                        "startPoint": {
+                            "lng": -85.005295,
+                            "lat": 39.819778
+                        },
+                        "index": 15,
+                        "formattedTime": "00:00:31",
+                        "directionName": "East",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "mapUrl": "http://www.mapquestapi.com/staticmap/v5/map?key=9inJSAdkW6jXoS91aivivVfg83dGdAYF&size=225,160&locations=39.81977844238281,-85.00529479980469|marker-16||39.8198356628418,-85.00125885009766|marker-17||&center=39.819807052612305,-85.00327682495117&defaultMarker=none&zoom=12&rand=-1371115727&session=61b8dc78-00a6-5f21-02b4-354b-022ea71142d9",
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 31,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/rs_left_sm.gif",
+                        "direction": 8
+                    },
+                    {
+                        "distance": 0,
+                        "streets": [],
+                        "narrative": "519 W WATER ST is on the right.",
+                        "turnType": -1,
+                        "startPoint": {
+                            "lng": -85.001259,
+                            "lat": 39.819836
+                        },
+                        "index": 16,
+                        "formattedTime": "00:00:00",
+                        "directionName": "",
+                        "maneuverNotes": [],
+                        "linkIds": [],
+                        "signs": [],
+                        "transportMode": "AUTO",
+                        "attributes": 0,
+                        "time": 0,
+                        "iconUrl": "http://content.mqcdn.com/mqsite/turnsigns/icon-dirs-end_sm.gif",
+                        "direction": 0
+                    }
+                ],
+                "hasFerry": false
+            }
+        ],
+        "options": {
+            "arteryWeights": [],
+            "cyclingRoadFactor": 1,
+            "timeType": 0,
+            "useTraffic": false,
+            "returnLinkDirections": false,
+            "countryBoundaryDisplay": true,
+            "enhancedNarrative": false,
+            "locale": "en_US",
+            "tryAvoidLinkIds": [],
+            "drivingStyle": 2,
+            "doReverseGeocode": true,
+            "generalize": -1,
+            "mustAvoidLinkIds": [],
+            "sideOfStreetDisplay": true,
+            "routeType": "FASTEST",
+            "avoidTimedConditions": false,
+            "routeNumber": 0,
+            "shapeFormat": "raw",
+            "maxWalkingDistance": -1,
+            "destinationManeuverDisplay": true,
+            "transferPenalty": -1,
+            "narrativeType": "text",
+            "walkingSpeed": -1,
+            "urbanAvoidFactor": -1,
+            "stateBoundaryDisplay": true,
+            "unit": "M",
+            "highwayEfficiency": 22,
+            "maxLinkId": 0,
+            "maneuverPenalty": -1,
+            "avoidTripIds": [],
+            "filterZoneFactor": -1,
+            "manmaps": "true"
+        },
+        "locations": [
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -85.001259,
+                    "lat": 39.819836
+                },
+                "adminArea4": "Wayne",
+                "adminArea5": "Centerville",
+                "postalCode": "47330-1055",
+                "adminArea1": "US",
+                "adminArea3": "IN",
+                "type": "s",
+                "sideOfStreet": "L",
+                "geocodeQualityCode": "P1AAA",
+                "adminArea4Type": "County",
+                "linkId": 78660554,
+                "street": "519 W Water St",
+                "adminArea5Type": "City",
+                "geocodeQuality": "POINT",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -85.001261,
+                    "lat": 39.819835
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -84.991165,
+                    "lat": 39.81163
+                },
+                "adminArea4": "Wayne",
+                "adminArea5": "Centerville",
+                "postalCode": "47330-1562",
+                "adminArea1": "US",
+                "adminArea3": "IN",
+                "type": "s",
+                "sideOfStreet": "R",
+                "geocodeQualityCode": "P1AAA",
+                "adminArea4Type": "County",
+                "linkId": 56287860,
+                "street": "706 Poplar Ave",
+                "adminArea5Type": "City",
+                "geocodeQuality": "POINT",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -84.991168,
+                    "lat": 39.811629
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -85.032433,
+                    "lat": 39.838024
+                },
+                "adminArea4": "Wayne",
+                "adminArea5": "Centerville",
+                "postalCode": "47330-1172",
+                "adminArea1": "US",
+                "adminArea3": "IN",
+                "type": "s",
+                "sideOfStreet": "L",
+                "geocodeQualityCode": "P1AAA",
+                "adminArea4Type": "County",
+                "linkId": 1070690,
+                "street": "8242 George Early Rd",
+                "adminArea5Type": "City",
+                "geocodeQuality": "POINT",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -85.032436,
+                    "lat": 39.838025
+                }
+            },
+            {
+                "dragPoint": false,
+                "displayLatLng": {
+                    "lng": -85.001259,
+                    "lat": 39.819836
+                },
+                "adminArea4": "Wayne",
+                "adminArea5": "Centerville",
+                "postalCode": "47330-1055",
+                "adminArea1": "US",
+                "adminArea3": "IN",
+                "type": "s",
+                "sideOfStreet": "L",
+                "geocodeQualityCode": "P1AAA",
+                "adminArea4Type": "County",
+                "linkId": 78660554,
+                "street": "519 W Water St",
+                "adminArea5Type": "City",
+                "geocodeQuality": "POINT",
+                "adminArea1Type": "Country",
+                "adminArea3Type": "State",
+                "latLng": {
+                    "lng": -85.001261,
+                    "lat": 39.819835
+                }
+            }
+        ],
+        "time": 1174,
+        "hasUnpaved": false,
+        "locationSequence": [
+            0,
+            2,
+            1,
+            3
+        ],
+        "hasFerry": false
+    },
+    "info": {
+        "statuscode": 0,
+        "copyright": {
+            "imageAltText": "© 2021 MapQuest, Inc.",
+            "imageUrl": "http://api.mqcdn.com/res/mqlogo.gif",
+            "text": "© 2021 MapQuest, Inc."
+        },
+        "messages": []
+    }
+}

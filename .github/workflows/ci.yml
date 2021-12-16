@@ -35,3 +35,4 @@ jobs:
           RAILS_ENV: test
           POSTGRES_USER: postgres
           POSTGRES_PASSWORD: postgres
+          mapquest_key: ${{ ENV['mapquest_key'] }}
