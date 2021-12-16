@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe RouteFacade do
   it 'creates a route object from service info' do
-    stub_request(:get, "http://www.mapquestapi.com/directions/v2/optimizedroute?json=%7B'locations':%5B%22519%20W%20Water%20St,%20Centerville,%20IN%22,%20%22519%20W%20Water%20St,%20Centerville,%20IN%22%5D%7D&key=9inJSAdkW6jXoS91aivivVfg83dGdAYF").to_return(body: File.read(File.join('spec', 'fixtures', 'route_facade.json')))
+    stub_request(:get, "http://www.mapquestapi.com/directions/v2/optimizedroute?json=%7B'locations':%5B%22519%20W%20Water%20St,%20Centerville,%20IN%22,%20%22519%20W%20Water%20St,%20Centerville,%20IN%22%5D%7D&key=#{ENV['mapquest_key']}").to_return(body: File.read(File.join('spec', 'fixtures', 'route_facade.json')))
     company = WasteCompany.create!(id: 1, name: "Candle Company", street_address: "519 W Water St", city: "Centerville", state: "IN")
     driver = company.drivers.create!(name: 'Smokey', id: 1)
     customer = driver.customers.create!(name: "Customer A")
